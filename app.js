@@ -11,7 +11,10 @@ app.use(express.json());
 
 // ROUTES
 app.get("/", (req, res) => {
-  res.send("Welcome to Planets");
+  res.send(
+    `<h1>Planets of our Solar System</h1>
+    <a href="/planets">Clich here to see the Planets Data</a>`
+  );
 });
 
 // APPS ROUTES
