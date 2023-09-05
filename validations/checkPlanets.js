@@ -3,7 +3,7 @@ const checkName = (req, res, next) => {
       next();
     }
     else {
-        res.status(400).json({ error: "Name is required" });
+        res.status(400).json({ error: "Name is required!" });
     }
 }
 
@@ -12,7 +12,7 @@ const checkType = (req, res, next) => {
         next();
     }
     else {
-        res.status(400).json({ error: "Website is required" });
+        res.status(400).json({ error: "Planet Type required!" });
     }
 }
 
